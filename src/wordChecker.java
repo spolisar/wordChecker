@@ -43,7 +43,7 @@ public class wordChecker {
      * @param word the word that is being checked
      * @return true if word is the first occurrence of that word in this file, false otherwise
      */
-    public boolean checkWord(String word){
+    private boolean checkWord(String word){
         if(word.equals(""))
             return false;
         if(! words.contains(word)){
