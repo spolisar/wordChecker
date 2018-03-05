@@ -3,24 +3,13 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-/*
-Results to output include:
--The number of individual words that are in the text (this means that your code is not counting duplicate words) (case insensitive)
--The number of words that have more than 5 letters
--The number of words that have less than 5 letters
--The amount of words that have an even amount of letters
--The amount of words that have an odd amount of letters.
-addendum:
--Except for hyphenated words and apostrophes puncuation should be ignored.
--Number can be treated as words
--[edit] and [2] can be treated as words, but just the word portion, thus edit and 2 without the square brackets.
- */
+
 
 /**
  * checks a file for unique words, and counts words that adhere to different attributes in regard to length (only counts unique words for these attributes)
  * removes enclosures such as (), [], {}, "", ''
  *   -this implementation may remove apostrophes on some plural possessive words
- * removes punctuation
+ * removes punctuation (does not include hyphenated words)
  */
 public class wordChecker {
     private TreeSet<String> words;
